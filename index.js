@@ -5,8 +5,8 @@ const discordLinkRegex = /(\b|^)https?:\/\/cdn\.discordapp\.com\/[a-z0-9/]*\.(pn
 
 
 client.on("message",async(msg)=>{
-    console.log(msg.cleanContent)
-    console.log(discordLinkRegex.test(msg.cleanContent))
+    // console.log(msg.cleanContent)
+    // console.log(discordLinkRegex.test(msg.cleanContent))
     if(msg.channel.id != process.env.CHANNEL) return;
     if(
         msg.attachments.size > 0 || 
